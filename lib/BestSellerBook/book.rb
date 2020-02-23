@@ -1,4 +1,4 @@
-class BestSeller::Book
+class BestSellerBook::Book
 
     attr_accessor :title, :author, :date, :url, :price, :format
   

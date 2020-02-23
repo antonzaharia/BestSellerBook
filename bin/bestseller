@@ -2,4 +2,4 @@
 
 require "./lib/environment.rb"
 
-BestSeller::CLI.new.call
+BestSellerBook::CLI.new.call

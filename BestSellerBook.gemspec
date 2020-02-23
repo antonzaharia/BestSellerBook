@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "BestSeller/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "BestSeller"
-  spec.version       = BestSeller::VERSION
+  spec.name          = "BestSellerBook"
+  spec.version       = BestSellerBook::VERSION
   spec.authors       = ["'ANTON ZAHARIA'"]
   spec.email         = ["'zaharia_anton@yahoo.com'"]
 
@@ -39,6 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "pry"
   spec.add_dependency "nokogiri"
   spec.add_dependency "open-uri"
 end
