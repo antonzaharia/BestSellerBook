@@ -1,8 +1,8 @@
 # BestSellerBook
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/BestSellerBook`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Best Seller Book! 
 
-TODO: Delete this and the text above, and describe your gem
+Run ruby bin/bestseller to start the program.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Choose books by their numbers and interact with the program only by typing what it asks for, otherwise it will start from the begining.
 
 ## Development
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/BestSellerBook. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/BestSellerBook/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/antonzaharia/BestSellerBook. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/antonzaharia/BestSellerBook/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +41,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the BestSellerBook project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/BestSellerBook/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the BestSellerBook project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/antonzaharia/BestSellerBook/blob/master/CODE_OF_CONDUCT.md).
