@@ -30,30 +30,30 @@ class BestSellerBook::Book
       self.all[id-1]
     end
 
-    def doc
+    def doc # Makes the url for each book
       Nokogiri::HTML(open("https://www.barnesandnoble.com/#{@url}"))
     end
 
-    def price
+    def price # Gets the price
       @price ||= doc.css(".price").text
     end
 
-    def description
+    def description # Gets the description
       @decription ||= doc.css(".text--medium p").text
     end
 
-    def live_delivery
+    def live_delivery # Gets the live delivery info
       @delivery ||= doc.css(".shipping-message-text").text
     end
 
-    def info
+    def info # More Info Array
       info = doc.css(".plain th")
     end
-    def data
+    def data # More Info Data Array (to be printed)
       data = doc.css(".plain td")
     end
 
-    def pages 
+    def pages # Gets the number of pages
       info.each_with_index do |d,i| 
         if d.text == "Pages:"
           return data[i].text
@@ -63,7 +63,7 @@ class BestSellerBook::Book
       end
     end
 
-    def date 
+    def date # Gets the publication date
       info.each_with_index do |d,i| 
         if d.text == "Publication date:"
           return data[i].text
@@ -73,7 +73,7 @@ class BestSellerBook::Book
       end
     end
 
-    def pages 
+    def pages # Gets the number of pages
       info.each_with_index do |d,i| 
         if d.text == "Pages:"
           return data[i].text
@@ -83,7 +83,7 @@ class BestSellerBook::Book
       end
     end
 
-    def sales_rank
+    def sales_rank # Gets the sale rank
       info.each_with_index do |d,i| 
         if d.text == "Sales rank:"
           return data[i].text
@@ -92,6 +92,7 @@ class BestSellerBook::Book
         end
       end
     end
+    
 
       
 

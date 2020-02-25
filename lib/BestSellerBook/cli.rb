@@ -13,10 +13,16 @@ class BestSellerBook::CLI
         puts "What books would you like to see? 1-5, 6-10, 11-15 or 16-20?"
         puts "-------------------------------------------------------------"
     
-        input = gets.strip.to_i
-    
-        print_books(input)
-    
+        input = gets.strip
+
+        if input == "1-5" || input == "6-10" || input == "11-15" || input == "16-20"
+        print_books(input.to_i)
+        else
+          puts "-------------------------------"
+          puts "I don't understand your answer."
+          puts "-------------------------------"
+        start
+        end
     end
 
     def print_books(from_number) # Prints list view
@@ -41,6 +47,11 @@ class BestSellerBook::CLI
         elsif
           book = BestSellerBook::Book.find_index(input.to_i)  # Get which book user wants
           print_book(book)
+        else
+          puts "-------------------------------"
+          puts "I don't understand your answer."
+          puts "-------------------------------"
+          start
         end
         puts "------------------------------------------------"
         puts "Would you like to see another book? Enter Y or N"
