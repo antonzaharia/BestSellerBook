@@ -2,23 +2,16 @@
 
 Welcome to Best Seller Book! 
 
-Run ruby bin/bestseller to start the program.
-
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone:
 
-```ruby
-gem 'BestSellerBook'
-```
 
-And then execute:
 
-    $ bundle install
+Execute:
 
-Or install it yourself as:
+./bin/bestseller
 
-    $ gem install BestSellerBook
 
 ## Usage
 

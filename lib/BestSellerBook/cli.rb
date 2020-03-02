@@ -44,8 +44,7 @@ class BestSellerBook::CLI
         input = gets.strip
         if input.upcase == "Y"
           start
-        elsif
-          book = BestSellerBook::Book.find_index(input.to_i)  # Get which book user wants
+        elsif book = BestSellerBook::Book.find_index(input.to_i)  # Get which book user wants
           print_book(book)
         else
           puts "-------------------------------"
@@ -74,13 +73,15 @@ class BestSellerBook::CLI
 
 
     def print_book(book) #Prints one book method
+      BestSellerBook::Scraper.get_info(book)
       puts "--------------------------------------------------------------"
       puts "-------- #{book.title} --------"
+      puts "--------------------------------------------------------------"
       puts "-------- Publication date: #{book.date}------" if book.date != nil
       puts "--------------------------------------------------------------"
       puts "-------- Price: #{book.price} --------"
       puts "--------------------------------------------------------------"
-      puts "-------- Delivery Info: - #{book.live_delivery} - "
+      puts "-------- Delivery Info: - #{book.delivery} - "
       puts "--------------------------------------------------------------"
       puts "-------- Number of pages: #{book.pages}" if book.pages != nil
       puts "--------------------------------------------------------------"
