@@ -1,27 +1,38 @@
 # BestSellerBook
 
-Welcome to Best Seller Book! 
+Welcome ! 
+
+Here you can find the latest best-seller books.
+
+## Overview
+
+This project fetches a webpage from Barnes and Noble (https://www.barnesandnoble.com/b/the-top-100-bestsellers-of-the-year/_/N-1p4d?Nrpp=20&page=1) with the top 20 books with information about the release date, saller rank, price, delivery options and more.
 
 ## Installation
 
-Clone:
+Clone this repository 
 
+## How to run the program
 
+In your terminal, run 'bundle install' to install all required gems.
+In your terminal, type './bin/bestseller' to run the file "bestseller" (found in '/bin') in Ruby programming language.
+Follow the CLI instructions.
 
-Execute:
+## Files information
 
-./bin/bestseller
-
+'/bin' has the running file
+'/config' has the setup environment
+'/lib' has the actual code files where all the work is done.
+Gemfile has all the required gems to run this project
 
 ## Usage
 
-Choose books by their numbers and interact with the program only by typing what it asks for, otherwise it will start from the begining.
+Run ./bin/bestseller choose books by their numbers and interact with the program only by typing what it asks for, otherwise it will start from the begining.
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
